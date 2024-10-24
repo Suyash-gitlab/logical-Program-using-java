@@ -1,0 +1,32 @@
+package Day_1_LB;
+import java.util.*;
+public class prime_num 
+{
+	//Prime number the num which divisible by 1 and only by itself
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number :");
+		int num=sc.nextInt();
+		int count=0;
+		for(int i=2;i<num-1;i++)
+		{
+
+			if(num%i==0)
+			{
+				count=1;
+			}		
+		}
+		if(count==0)
+		{
+			System.out.println(num+"  is prime number");
+		}
+		else {
+			System.out.println(num+"  is not a prime number ");
+		}
+
+		sc.close();
+		
+	}
+
+}
